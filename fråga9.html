@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>Fråga 9</title>
-</head>
+  </head>
 
-<body>
-    <!-- Här ska din HTML kod vara -->
+  <body>
+    <input id="adress" type="text" />
+    <button style="display: block" onclick="showImage()">Search</button>
+    <img src="" alt="" />
 
     <script>
-        // Här ska din JavaScript kod vara
-
-
+      function showImage() {
+        let adress = document.getElementById("adress").value;
+        let img = document.querySelector("img");
+        img.src = adress;
+      }
     </script>
-</body>
-
+  </body>
 </html>

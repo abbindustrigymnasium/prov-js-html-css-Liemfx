@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>Fråga 8</title>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <!-- Här ska din HTML kod vara -->
 
     <script>
-        // Här ska din JavaScript kod vara
+      let numbers = [12, 25, 37, 43, 59, 61];
+      function filterEvenNumbers() {
+        let evenNumbers = numbers.filter(function (element) {
+          return element % 2 === 0;
+        });
+        console.log(evenNumbers);
+      }
 
-
+      filterEvenNumbers();
     </script>
-</body>
-
+  </body>
 </html>
